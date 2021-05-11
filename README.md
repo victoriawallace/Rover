@@ -23,7 +23,10 @@ To handle objective (5), the program opens a handle to file results.txt.  For ev
 I've implemented a solution both in python (code/python/rover.py) and in q (code/q/rover.q).  I realise rover.q requires a kdb+ license to run, so I've provided an example of the output rover.q produces (code/q/example0.txt).
 An example of the output produced by the python version is also provided (code/python/example0.txt).  The programs behave quite similarly.
 
-To run rover.py: `python code/python/rover.py`
-
 There are some obvious improvements.  For example, I didn't get round to writing unit tests.
 Further, the program assumes that 'Rover/' lives in the user's home directory.
+
+To run:
+```
+$ python code/python/rover.py
+```
