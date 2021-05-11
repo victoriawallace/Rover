@@ -62,18 +62,15 @@ class Rover(object):
   """
   Calculates rover's next co-ordinate
   Called when op = 'F' or 'B'.  pos = current position (x,y,c), m= -1 (backwards) or 1 (forwards)
+  self.compass[c] will return a multiplier based on rover's cardial position
+  'F' -> advance 1 step in c direction, 'B' -> advance -1 step in c direction
+  if, say, we are facing 'W' and want to advance +1 step, we will want to multiply the 'm' multiplier by -1.
   """
   def move(self,pos,m):
     x,y,c = pos
-    """
-    self.compass[c] will return a multiplier based on rover's cardial position
-    'F' -> advance 1 step in c direction, 'B' -> advance -1 step in c direction
-    if, say, we are facing 'W' and want to advance +1 step, we will want to multiply the 'm' multiplier by -1.
-    """
     n = self.compass[c] 
-    """
-    performing 'mod' acts as a 'wrapper' as we iterate over the planet's coordinates, ensuring we don't 'fall over the edge'. :)
-    """
+    
+    # modulo operation acts as a 'wrapper' as we iterate over the planet's coordinates, ensuring we don't 'fall over the edge'. :)
     if c in 'EW':
       k = n*m + x
       x = k%self.xmax
