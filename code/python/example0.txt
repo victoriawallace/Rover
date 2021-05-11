@@ -1,0 +1,47 @@
+Vikkis-MacBook-Air:~ vikkiwallace$ python code/python/rover.py
+Initialize planet co-ordinates
+Length in x-direction: 6
+Length in y-direction: 4
+Initialize rover's position
+Enter x co-ordinate: 0
+Enter y co-ordinate: 0
+Enter cardinal direction (N, E, S, W): S
+Operation F successful.  Rover's current position is (0, 3, 'S')
+Operation F successful.  Rover's current position is (0, 2, 'S')
+Operation B successful.  Rover's current position is (0, 3, 'S')
+Operation R successful.  Rover's current position is (0, 3, 'W')
+Operation R successful.  Rover's current position is (0, 3, 'N')
+Operation F successful.  Rover's current position is (0, 0, 'N')
+Operation F successful.  Rover's current position is (0, 1, 'N')
+Operation L successful.  Rover's current position is (0, 1, 'W')
+Operaton: F unsuccessful (there's something in my way at (5, 1, 'W')!).  Assuming position at (0, 1, 'W')
+Operation R successful.  Rover's current position is (0, 1, 'N')
+Operation L successful.  Rover's current position is (0, 1, 'W')
+Operation L successful.  Rover's current position is (0, 1, 'S')
+Operation F successful.  Rover's current position is (0, 0, 'S')
+Operation F successful.  Rover's current position is (0, 3, 'S')
+Operation F successful.  Rover's current position is (0, 2, 'S')
+Operation L successful.  Rover's current position is (0, 2, 'E')
+Operation L successful.  Rover's current position is (0, 2, 'N')
+Operation B successful.  Rover's current position is (0, 1, 'N')
+Invalid operation H.  Ignoring.
+Operation L successful.  Rover's current position is (0, 1, 'W')
+Invalid operation P.  Ignoring.
+Operaton: B unsuccessful (there's something in my way at (1, 1, 'W')!).  Assuming position at (0, 1, 'W')
+Operaton: F unsuccessful (there's something in my way at (5, 1, 'W')!).  Assuming position at (0, 1, 'W')
+Operaton: F unsuccessful (there's something in my way at (5, 1, 'W')!).  Assuming position at (0, 1, 'W')
+Operaton: F unsuccessful (there's something in my way at (5, 1, 'W')!).  Assuming position at (0, 1, 'W')
+Invalid operation 
+.  Ignoring.
+Vikkis-MacBook-Air:~ vikkiwallace$ cat code/python/results.txt | head -10
+(0, 3, 'S')
+(0, 2, 'S')
+(0, 3, 'S')
+(0, 3, 'W')
+(0, 3, 'N')
+(0, 0, 'N')
+(0, 1, 'N')
+(0, 1, 'W')
+(0, 1, 'W')
+(0, 1, 'N')
+
