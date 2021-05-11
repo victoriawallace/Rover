@@ -100,8 +100,8 @@ class Rover(object):
 
 def main():
   
-  commands_path = os.path.join(os.environ['HOME'],'code/python/commands.txt')
-  results_path = os.path.join(os.environ['HOME'],'code/python/results.txt')
+  commands_path = os.path.join(os.environ['HOME'],'Rover/code/python/commands.txt')
+  results_path = os.path.join(os.environ['HOME'],'Rover/code/python/results.txt')
 
   """
   Set-up planet co-ordinates based on user input and initialize rover.
